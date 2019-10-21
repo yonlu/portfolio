@@ -129,6 +129,10 @@ body, input, select, textarea {
   }
 }
 
+h2 > a {
+  border-bottom: none;
+}
+
 a {
   -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
   transition: color 0.2s ease, border-bottom-color 0.2s ease;
