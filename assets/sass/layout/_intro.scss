@@ -1,27 +1,25 @@
 /* Intro */
 
-	#intro {
-		background-attachment: fixed;
-	  background-image: url('/assets/css/images/intro.svg');
-		background-position: top right;
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
+#intro {
+  p {
+    font-size: 1.25em;
 
-		p {
-			font-size: 1.25em;
+    @include breakpoint("<=medium") {
+      br {
+        display: none;
+      }
+    }
 
-			@include breakpoint('<=medium') {
-				br {
-					display: none;
-				}
-			}
+    @include breakpoint("<=small") {
+      font-size: 1em;
+    }
+  }
 
-			@include breakpoint('<=small') {
-				font-size: 1em;
-			}
-		}
+  @include breakpoint("<=large") {
+    background-attachment: scroll;
+  }
 
-		@include breakpoint('<=large') {
-			background-attachment: scroll;
-		}
-	}
+  .green-accent {
+    color: _palette(green-accent);
+  }
+}
