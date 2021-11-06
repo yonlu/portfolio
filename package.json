@@ -1,4 +1,6 @@
 {
+  "name": "portfolio",
+  "version": "0.1.0",
   "dependencies": {},
   "devDependencies": {
     "live-server": "^1.2.1",
